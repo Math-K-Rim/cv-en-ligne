@@ -11,6 +11,12 @@
     z-index: -1;
 }
 
+
+body{
+	min-height: 100vh;
+}
+
+
 /* TABLEAU */
 table{background-image: url("wallpaper.jpg");
 	background-size:78%;
