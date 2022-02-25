@@ -17,6 +17,7 @@ table{background-image: url("wallpaper.jpg");
 	margin-left: auto;
 	margin-right: auto;
 	width:95%;
+	overflow:auto
 }
 
 /* CARATERISTIQUES DU TABLEAU */
@@ -28,7 +29,7 @@ td, th{
 
 /* ARCHITECTURE DE L'EN-TETE*/
 header{
-	background-color: black;
+	
 	padding: 0px 0px 0px 10px;
 	margin-left: auto;
 	margin-right: auto;
