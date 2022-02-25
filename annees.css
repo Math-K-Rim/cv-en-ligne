@@ -1,0 +1,309 @@
+/*BACKGROUND DE LA PAGE */
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* TABLEAU */
+table{background-image: url("wallpaper.jpg");
+	background-size:78%;
+	margin-left: auto;
+	margin-right: auto;
+	width:95%;
+}
+
+/* CARATERISTIQUES DU TABLEAU */
+td, th{
+	font-size: 15px;
+	color: white;
+	text-shadow:1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/* ARCHITECTURE DE L'EN-TETE*/
+header{
+	background-color: black;
+	padding: 0px 0px 0px 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width:95%;
+	min-height: 5vh;
+}
+
+/* ANIMATION DES LIENS DANS L'EN-TETE*/
+.fluo{
+	position: relative;
+	display: inline-block;
+	margin: 10px 0;
+	color:#03e9f4;
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+}
+
+
+.fluo:nth-child(1){
+	filter: hue-rotate(290deg);
+}
+
+
+.fluo:nth-child(3){
+	filter: hue-rotate(110deg);
+}
+
+
+.fluo:hover{background: #03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px #03e9f4,
+	  	    	0 0 25px #03e9f4,
+	  	    	0 0 50px #03e9f4,
+	  	    	0 0 200px #03e9f4;
+}
+
+
+.fluo span {position: absolute;
+	display: block;
+}
+
+
+.fluo span:nth-child(1){top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#03e9f4);
+	animation: animate1 1s linear infinite;
+}
+
+
+@keyframes animate1{
+	0%
+	{
+		left: -100%;
+	}
+	50%,100%
+	{
+		left: 100%;
+	}
+}
+
+
+.fluo span:nth-child(2){
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#03e9f4);
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+}
+
+
+@keyframes animate2{
+	0%
+	{
+		top: -100%;
+	}
+	50%,100%
+	{
+		top: 100%;
+	}
+}
+
+
+.fluo span:nth-child(3){bottom: 0;
+	right: -100%;
+	width:100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#03e9f4);
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.5s;
+}
+
+
+@keyframes animate3{
+	0%
+	{
+		right: -100%;
+	}
+	50%,100%
+	{
+		right: 100%;
+	}
+}
+
+
+.fluo span:nth-child(4){bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#03e9f4);
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s;
+}
+
+
+@keyframes animate4{
+	0%
+	{
+		bottom: -100%;
+	}
+	50%,100%
+	{
+		bottom: 100%;
+	}
+}
+
+
+/* BALISE POUR LA TRANSPARENCE DES PUCES */
+
+ul{list-style: none;
+}
+
+/* ARCHITECTURES DU BAS DE PAGE*/
+footer{background-color:black;
+	font: white;
+	padding: 0% 0% 0% 10%;
+	margin-left: auto;
+	margin-right: auto;
+	width:95%;
+	bottom:100%;
+}
+
+/* BALISE POUR LES LOGOS */
+.fa {padding: 2px;
+	font-size: 25px;
+	width: 25px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}	
+	
+
+
+
+	
+
+	
+
+	 
